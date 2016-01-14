@@ -1,5 +1,6 @@
 package alex.rigeditor;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -58,8 +59,20 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onItemClick(AdapterView parent,
                                 View view, int position, long id) {
-            Log.d("HomeActivity",
-                    (String) parent.getAdapter().getItem(position));
+            Intent i;
+            switch((String) parent.getAdapter().getItem(position))
+            {
+                case "Accueil":
+                    // WHY
+                    //i = new Intent(this, MainActivity.class);
+                    break;
+                case "Nouveau":
+                    break;
+                case "Edition":
+                    break;
+                default:
+                break;
+            }
         }
     }
 
