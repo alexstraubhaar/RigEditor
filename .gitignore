@@ -28,3 +28,4 @@ proguard/
 
 # Weird Repository
 .idea/
+gradle/

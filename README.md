@@ -1,2 +1,6 @@
 # RigEditor
-Projet Android He-Arc
+He-Arc Android Project
+
+## Wat
+Ever had 10 bands and 10'000 effects / amps ? Track settings with this tite shit yo !
+
