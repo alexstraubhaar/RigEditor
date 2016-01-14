@@ -1,18 +1,13 @@
-package alex.rigeditor.data;
+package alex.rigeditor;
 
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import alex.rigeditor.R;
-
-public class EditRig extends Activity {
+public class DisplayRig extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_rig);
-
-
+        setContentView(R.layout.activity_display_rig);
     }
 }

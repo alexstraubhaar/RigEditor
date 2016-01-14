@@ -1,12 +1,13 @@
 package alex.rigeditor.data;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
 /**
  * Created by User on 05.11.2015.
  */
-public class Rig
+public class Rig implements Serializable
 {
     // Constructor
     public Rig(String title)
