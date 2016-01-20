@@ -1,5 +1,6 @@
 package alex.rigeditor;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -64,9 +65,12 @@ public class MainActivity extends AppCompatActivity {
             {
                 case "Accueil":
                     // WHY
-                    //i = new Intent(this, MainActivity.class);
+                    i = new Intent(MainActivity.this, MainActivity.class);
+                    startActivity(i);
                     break;
                 case "Nouveau":
+                    i = new Intent(MainActivity.this, NewRig.class);
+                    startActivity(i);
                     break;
                 case "Edition":
                     break;

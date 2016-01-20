@@ -2,6 +2,8 @@
     <string name="app_name">RigEditor</string>
     <string name="imageTip">photo</string>
     <string name="action_settings">Settings</string>
+    <string name="createButtonValue">Valider</string>
+    <string name="rigNameHint">Nom</string>
 
     <!-- Menu drawer -->
     <string-array name="menu_items">
