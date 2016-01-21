@@ -5,11 +5,11 @@ package alex.rigeditor.data;
  */
 
 public enum ElementType {
-    Overdrive,
-    Distortion,
-    Fuzz,
-    Octaver,
-    Phaser,
-    Chorus,
-    Delay;
+    OVERDRIVE,
+    DISTORTION,
+    FUZZ,
+    OCTAVER,
+    PHASER,
+    CHORUS,
+    DELAY;
 }

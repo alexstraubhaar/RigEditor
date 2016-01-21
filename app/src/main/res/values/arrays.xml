@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItems">
+        <item>Overdrive</item>
+        <item>Distortion</item>
+        <item>Fuzz</item>
+        <item>Octaver</item>
+        <item>Phaser</item>
+        <item>Delay</item>
+        <item>Chorus</item>
+    </string-array>
+</resources>
