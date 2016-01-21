@@ -3,6 +3,7 @@ package alex.rigeditor.data;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Created by User on 05.11.2015.
@@ -13,6 +14,7 @@ public class Rig implements Serializable
     public Rig(String title)
     {
         this.title = title;
+        elements = new TreeMap<String, Element>();
     }
 
     // Public Methods

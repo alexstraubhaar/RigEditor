@@ -2,6 +2,7 @@ package alex.rigeditor;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -14,6 +15,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.google.gson.Gson;
+
+import java.util.ArrayList;
+
+import alex.rigeditor.data.Rig;
+
 public class MainActivity extends AppCompatActivity {
 
     // Attributs
@@ -22,10 +29,25 @@ public class MainActivity extends AppCompatActivity {
     private ListView drawerList;
     private ActionBarDrawerToggle toggle;
 
+    public ListView rigList;
+    public ArrayList<String> stringArrayList;
+    public ArrayAdapter<String> adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Liste de l'accueil
+        rigList = (ListView)findViewById(R.id.listView);
+        adapter = new ArrayAdapter<String>(MainActivity.this, R.layout.mon_layout_adapter);
+        rigList.setAdapter(adapter);
+
+        // Recup rig
+        SharedPreferences mPrefs = getPreferences(MODE_PRIVATE);
+        Gson gson = new Gson();
+        String json = mPrefs.getString("MyObject", "");
+        Rig myRig = gson.fromJson(json, Rig.class);
 
         // Création du drawer
         menuSections = getResources().getStringArray(R.array.menu_items);

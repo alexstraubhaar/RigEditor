@@ -8,6 +8,7 @@
     <string name="brandHint">Marque</string>
     <string name="modelHint">Model</string>
     <string name="addElementButtonText">Ajouter</string>
+    <string name="saveButtonText">Sauver</string>
 
     <!-- Menu drawer -->
     <string-array name="menu_items">

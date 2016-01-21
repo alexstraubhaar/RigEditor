@@ -22,7 +22,7 @@ public class NewRig extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(NewRig.this, EditRig.class);
-                String rignameText = "Éléments de " + rigName.getText().toString();
+                String rignameText = rigName.getText().toString();
                 i.putExtra("rigname", rignameText);
                 startActivity(i);
             }

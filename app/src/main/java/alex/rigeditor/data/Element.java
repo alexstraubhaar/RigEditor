@@ -15,10 +15,18 @@ public class Element
         this.picture = picture;
         this.elementType = elementType;
     }
+    public Element(String brand, String model, Bitmap picture, String type)
+    {
+        this.brand = brand;
+        this.model = model;
+        this.picture = picture;
+        this.type = type;
+    }
 
     // Attributes
     private String brand;
     private String model;
     private Bitmap picture;
     private ElementType elementType;
+    private String type;
 }
